@@ -48,5 +48,14 @@ Route::get('/prodi/delete/{id}', [Prodi::class, 'delete']);
 Route::post('/prodi/store', [Prodi::class, 'store']);
 Route::post('/prodi/update/{id}', [Prodi::class, 'update']);
 
+//jadwal 
+Route::get('/jadwal', [Prodi::class, 'index']);
+Route::get('/jadwal/edit/{id}', [Prodi::class, 'edit']);
+Route::get('/jadwal/delete/{id}', [Prodi::class, 'delete']);
+Route::post('/jadwal/store', [Prodi::class, 'store']);
+Route::post('/jadwal/update/{id}', [Prodi::class, 'update']);
+Route::get('/jadwal/kuota_set/{id}', [Prodi::class, 'setKuota']);
+Route::post('/jadwal/kuota_set/store', [Prodi::class, 'setKuotaPost']);
+
 
 
